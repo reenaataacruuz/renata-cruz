@@ -38,8 +38,8 @@ section {
 .photo {
     border-radius: 50%;
     overflow: hidden;
-    width: 600px;
-    height: 600px;
+    width: 30rem;
+    height: 30rem;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     position: absolute;
     right: 20px; 
@@ -53,12 +53,11 @@ section {
 }
 
 .skills {
-    margin-top: 70%; 
-    padding: 20px; 
+    margin-top: 50%; 
+    padding: 1rem; 
     background-color: #333;
     border-radius: 8px; 
-    text-align: center;
-    width: 50%; 
+    width: 30rem; 
     max-width: 800px; 
     box-sizing: border-box;
 }
@@ -74,16 +73,15 @@ section {
 
 h1 {
     margin: 0;
-    font-size: 3.5em;
+    font-size: 3.5rem;
 }
 
-
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .scroll-btn {
@@ -188,6 +186,7 @@ p {
 
 #section3 {
     padding: 20px;
+    margin-top: 15rem;
 }
 
 #section3 h1 {
@@ -271,6 +270,13 @@ p {
         padding: 20px; 
     }
 
+    #section1 h1{
+        font-size: 2.5rem;
+    }
+
+    #section1 h2{
+        font-size: 1.5rem;
+    }
     .text {
         text-align: center; 
         margin-bottom: 20px; 
@@ -278,15 +284,16 @@ p {
 
     .photo {
         position: static; 
-        width: 200px; 
-        height: 200px;
+        width: 10rem; 
+        height: 10rem;
         margin-bottom: 20px; 
         box-shadow: none;
-        margin-left: 15%;
+        display: inline-block;
     }
 
     .skills{
         width: 100%;
+        margin-top: 20%;
     }
 
     .social-icons {
@@ -306,6 +313,7 @@ p {
 
     #section2 {
         padding: 10px;
+        margin-top: 10rem;
     }
 
     #section2 h1 {
@@ -393,18 +401,5 @@ p {
         content: "";
         display: table;
         clear: both;
-    }
-
-
-    section::after {
-        content: "";
-        display: block;
-        height: 2px; 
-        background-color: #D8BFD8; 
-        margin: 20px 0; 
-    }
-
-    section:last-of-type::after {
-        display: none;
     }
 }
