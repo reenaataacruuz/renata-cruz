@@ -189,7 +189,7 @@ p {
 
 #section3 {
     padding: 20px;
-    /* margin-top: 15rem; */
+    margin-top: 25rem;
 }
 
 #section3 h1 {
@@ -319,6 +319,7 @@ p {
 
     #section2 {
         padding: 10px;
+        margin-top: 40%;
     }
 
     #section2 h1 {
@@ -345,6 +346,7 @@ p {
 
     #section3 {
         padding: 10px;
+        margin-top: 1rem;
     }
 
     #section3 h1 {
