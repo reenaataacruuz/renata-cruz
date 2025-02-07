@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorando meu código</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-blog">
+        <h2>Cypress: Como configurar uma pipeline no bitbucket?</h2>
+        <span>Quinta-feira. 17 de Janeiro de 2025</span>
+
+        <p>Nesse post, vou explicar de maneira simples como podemos configurar uma pipeline manual no Cypress. Para esse exemplo, precisamos considerar dois pontos importantes:</p>
+        <p>Vou usar um exemplo real de criação de uma pipeline para um projeto hospedado no Bitbucket.</p>
+        <p>O Cypress precisa estar instalado no repositório do Bitbucket e, ao menos, deve haver uma spec de teste configurada.</p>
+
+        <p><strong>>_Pipelines no Bitbucket</strong></p>
+        <p>Vamos começar criando um arquivo chamado <code>bitbucket-pipelines.yml</code>.</p>
+        <p>Dica: Normalmente, eu não faço o push desse arquivo diretamente para a branch master. Neste projeto, tenho alguns testes (como os de autenticação) que não estão preparados para rodar de forma headless (sem interface gráfica). Então, eu crio uma branch separada, normalmente uma release, e faço o push do arquivo da pipeline nessa branch, com as specs que sei que funcionarão sem problemas.</p>
+        <p>O arquivo de pipeline para esse projeto é um pouco customizado, e a configuração fica assim:</p>
+
+        <pre>
+            <code>
+                image: cypress/browsers:22.12.0
+
+                    pipelines:
+                    custom:
+                        manual-run:
+                        - step:
+                            name: Install Dependencies
+                            caches:
+                                - node
+                            script:
+                                - npm install
+                        - step:
+                            name: Execute test
+                            script:
+                                - npm ci
+                                - node runner.js || true  # (não obrigatório)
+                            caches:
+                                - node
+                            artifacts:
+                                - cypress/videos/**
+            </code>
+        </pre>
+
+        <p><strong>image:</strong> Especifica a imagem Docker que será usada no repositório onde a pipeline será executada.</p>
+        <p><strong>pipelines:</strong> Aqui, estou criando uma pipeline personalizada, com a tag <code>custom</code>.</p>
+        <p><strong>custom</strong>: Define que essa será uma pipeline personalizada, que você pode controlar como e quando executar.</p>
+        <p><strong>manual-run:</strong> Este é o nome da pipeline personalizada. O termo "manual" indica que a execução será feita manualmente, ou seja, quando eu quiser rodar a pipeline, vou no Bitbucket, seleciono a branch e então executo.</p>
+        <p><strong>step 1:</strong> O primeiro passo é instalar as dependências necessárias para o projeto. Ele usa o cache do Node.js para otimizar o processo e roda o comando npm install.</p>
+        <p><strong>step 2:</strong> O segundo passo é a execução dos testes. Primeiro, o comando npm ci instala as dependências conforme o package-lock.json. Depois, temos o comando node runner.js || true, que é uma implementação minha porque o repositório está integrado com o relatório Tesults. Esse comando envia automaticamente os resultados dos testes para o Tesults. Mas, esse comando não é obrigatório, foi apenas para exemplificar que podemos acionar outros comandos durante a pipeline.</p>
+        <p><strong>artifacts:</strong> No final, especifico que os vídeos gerados pelo Cypress durante a execução dos testes devem ser salvos na pasta cypress/videos/, para que você possa visualizar o que aconteceu em cada teste executado.</p>
+        <p>Por fim, depois de configurar tudo isso, basta subir o arquivo na branch da sua escolha no repo do bitbucket. Após fazer o push, você pode acessar o seu repositório no Bitbucket e seguir este caminho:<strong> Pipelines (no menu lateral a esquerda) > Run pipeline > Branch (selecione a branch onde você colocou o arquivo da pipeline) > Pipeline (escolha a pipeline manual) > Run</strong>. E pronto, a execução dos testes será iniciada.</p>
+
+        <div>
+            <img src="assets/pipeline.png" alt="Executando a pipeline">
+        </div>
+
+        <p>Você pode encontrar mais detalhes sobre as pipelinas no Cypress nessa <a href="https://docs.cypress.io/app/continuous-integration/overview">doc</a> aqui!</p>
+        <span>Obrigadaa por ter acompanhado, até a próxima! ☺️</span>
+    </div>
+</body>
+</html>

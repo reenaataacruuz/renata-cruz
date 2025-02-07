@@ -1,0 +1,50 @@
+body {
+    margin: 5rem;
+    font-family: Crimson Text;
+    color: #D8BFD8; 
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a:link, a:visited {
+    font-family: Crimson Text;
+    color: #e5cce5; 
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.new {
+    border: solid;
+    border-color: aliceblue;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ffe6ff;
+}
+
+.container-blog {
+    margin: 10rem;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) and (min-width: 370px) {
+    body {
+        margin: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-blog {
+        margin: 3rem;
+    }
+
+}

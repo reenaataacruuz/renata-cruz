@@ -1,5 +1,4 @@
 body {
-    margin: 20px; 
     font-family: Crimson Text;
     color: #D8BFD8; 
     background-color: #000000;
@@ -11,12 +10,10 @@ body {
     flex-direction: column;
     max-width: 1200px; 
     margin: 0 auto;
-    box-sizing: border-box; 
-    gap: 5rem;
 }
 
 section {
-    height: 100vh;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -53,21 +50,15 @@ section {
     object-fit: cover;
 }
 
-.contentSkills{
-    width: 100%;
+a:link, a:visited {
+    font-family: Crimson Text;
+    color: #665b66; 
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-.skills {
-    padding: 0.7em; 
-    background-color: #333;
-    border-radius: 8px; 
-    width: 100%; 
-
-}
-
-.skills img {
-    margin-right: 10px;
- 
+.links a{
+    padding: 1rem;
 }
 
 #section2, #section3 {
@@ -79,37 +70,8 @@ h1 {
     font-size: 3.5rem;
 }
 
-h2 {
+h2, p {
     font-size: 2rem;
-}
-
-p {
-    font-size: 2rem;
-}
-
-.scroll-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #D8BFD8;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    font-size: 24px;
-    color: #000000; 
-    z-index: 1000; 
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.scroll-btn:hover {
-    background-color: #C0A0C0; 
-    transform: scale(1.1);
 }
 
 .social-icons {
@@ -185,11 +147,11 @@ p {
 
 .project-button:hover {
     background-color: #C0A0C0; 
+    color: black; 
 }
 
 #section3 {
     padding: 20px;
-    margin-top: 25rem;
 }
 
 #section3 h1 {
@@ -259,7 +221,6 @@ p {
     display: table;
     clear: both;
 }
-
 @media (max-width: 1024px) and (min-width: 370px) {
     .container {
         gap: 10rem;
@@ -297,9 +258,15 @@ p {
         display: inline-block;
     }
 
-    .skills{
-        width: 100%;
-        margin-top: 20%;
+    a:link, a:visited {
+        font-family: Crimson Text;
+        color: #D8BFD8; 
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    
+    .links a{
+        padding: 0.1rem;
     }
 
     .social-icons {
@@ -319,7 +286,6 @@ p {
 
     #section2 {
         padding: 10px;
-        margin-top: 40%;
     }
 
     #section2 h1 {
