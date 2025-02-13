@@ -13,3 +13,21 @@ function scrollToNextSection() {
         });
     }
 }
+
+
+
+document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", function () {
+        let content = this.nextElementSibling
+        
+        document.querySelectorAll(".accordion-content").forEach(item => {
+            if (item !== content) {
+                item.style.display = "none"
+                item.previousElementSibling.classList.remove("active")
+            }
+        })
+        let isOpen = content.style.display === "block"
+        content.style.display = isOpen ? "none" : "block"
+        this.classList.toggle("active", !isOpen)
+    })
+})
