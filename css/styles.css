@@ -267,6 +267,7 @@ h2, p {
     
     .links a{
         padding: 0.1rem;
+        display: grid;
     }
 
     .social-icons {
