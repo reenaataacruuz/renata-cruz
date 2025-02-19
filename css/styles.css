@@ -61,6 +61,10 @@ a:link, a:visited {
     padding: 1rem;
 }
 
+#section2 {
+    padding: 4rem 20rem;
+}
+
 #section2, #section3 {
     background-color: #000000;
 }
@@ -286,7 +290,7 @@ h2, p {
     }
 
     #section2 {
-        padding: 10px;
+        padding: 1.0rem;
     }
 
     #section2 h1 {
