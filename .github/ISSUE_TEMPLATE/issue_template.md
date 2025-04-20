@@ -1,6 +1,6 @@
 ---
-nome template: Bug Report
-saobre: Bugs relacionados ao projeto
+nome: Bug Report
+sobre: Bugs relacionados ao projeto
 labels: bug
 ---
 
