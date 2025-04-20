@@ -1,6 +1,6 @@
 ---
-nome: Bug Report
-sobre: Bugs relacionados ao projeto
+name: Bug Report
+about: Bugs relacionados ao projeto
 labels: bug
 ---
 
