@@ -41,17 +41,13 @@ footer {
 .container-home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
   height: 100vh;
-  /* text-align: center; */
   color: var(--cor-fonte-principal);
 }
 
 .content-wrapper {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   width: 80%;
   max-width: 800px;
@@ -64,7 +60,7 @@ footer {
   top: 15rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   position: absolute;
-  right: 15rem;
+  right: 5rem;
   width: 25rem;
   height: 25rem;
 }
@@ -93,7 +89,7 @@ section {
 .text {
   text-align: left;
   position: absolute;
-  left: 20rem;
+  left: 12rem;
   top: 20rem;
 }
 
@@ -153,8 +149,6 @@ p {
 .nav-links {
   margin-top: 1.5em;
   position: absolute;
-  /* bottom: 10rem;
-  left: 17rem; */
 }
 
 .nav-links a {
