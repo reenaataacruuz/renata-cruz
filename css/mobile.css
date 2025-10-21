@@ -1,0 +1,81 @@
+@media (max-width: 1024px) and (min-width: 370px) {
+  .container-home {
+    max-width: 300px;
+  }
+  .name-title {
+    font-size: 2.7rem;
+  }
+
+  .p1 {
+    font-size: 1.3rem;
+  }
+
+  .p2 {
+    font-size: 1rem;
+  }
+
+  .icons-social {
+    margin-top: 10px;
+  }
+
+  section.about-me {
+    padding: 35px;
+  }
+
+  .grid-about {
+    display: flow;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    min-width: 300px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .container-tech h2 {
+    text-align: left;
+  }
+  .skills {
+    text-align: center;
+  }
+
+  .ds-plus {
+    padding: 1rem;
+    margin-top: 40px;
+  }
+
+  .tech-div {
+    min-width: 330px;
+    padding: 15px;
+  }
+
+  .div-nowhow {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .card-project {
+    min-width: 330px;
+  }
+
+  .container-project h2 {
+    min-width: 200px;
+  }
+
+  .info-project {
+    min-width: 70px;
+  }
+
+  .description-project p {
+    font-size: 1rem;
+  }
+
+  .button-acess-repos a {
+    padding: 5px;
+    font-size: 1rem;
+  }
+}
