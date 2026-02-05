@@ -1,763 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renata Cruz</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="css/styles.css" media="all" />
-    <link rel="stylesheet" href="css/mobile.css" media="all" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    <meta
+      name="description"
+      content="Renata Cruz - Quality Assurance Engineer especializada em testes manuais e automação"
     />
+    <title>Renata Cruz | QA</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <section class="home">
-      <div class="container-home">
-        <div class="animate-float">
-          <span class="subtitle">QA Analyst • Manual & Test Automation</span>
-        </div>
-        <h1 class="name-title">
-          Olá, sou a
-          <span class="gradient-title">Renata Cruz</span>
-        </h1>
-        <p class="p1">
-          QA Analyst focada em testes manuais e automatizados para aplicações
-          <span class="devices">web mobile</span> e
-          <span class="devices">web desktop</span>.
-        </p>
-        <p class="p2">
-          Crio automações eficientes com foco em qualidade contínua, integração
-          com pipelines e boas práticas de versionamento.
-        </p>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="logo">Renata Cruz</a>
 
-        <div class="icons-social">
-          <a class="icon" href="https://www.linkedin.com/in/renataceliacruz">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-linkedin-icon lucide-linkedin"
-            >
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-              ></path>
-              <rect width="4" height="12" x="2" y="9"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about" class="nav-link link-underline">Sobre</a></li>
+          <li><a href="#skills" class="nav-link link-underline">Skills</a></li>
+          <li>
+            <a href="#projects" class="nav-link link-underline">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link link-underline">Contato</a>
+          </li>
+        </ul>
 
-          <a class="icon" href="https://github.com/reenaataacruuz">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-github-icon lucide-github"
-            >
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-              ></path>
-              <path d="M9 18c-4.51 2-5-2-7-2"></path>
-            </svg>
-          </a>
-
-          <a class="icon" href="mailto:renataceliacruz@gmail.com">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail-icon lucide-mail"
-            >
-              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            </svg>
-          </a>
-
-          <a class="icon" href="https://t.me/reenaataacruuz">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-send-icon lucide-send"
-            >
-              <path
-                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
-              ></path>
-              <path d="m21.854 2.147-10.94 10.939"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-me">
-      <div class="container-about">
-        <h2>Sobre <span class="me">Mim</span></h2>
-
-        <div class="grid-about">
-          <div class="description">
-            <p>
-              Sou QA Analyst com ampla experiência em testes manuais e
-              automatizados para aplicações <strong>web mobile</strong> e
-              <strong>web desktop</strong>.
-            </p>
-            <p>
-              Tenho paixão por criar automações eficientes, com foco em
-              qualidade contínua, integração com pipelines CI/CD e implementação
-              de boas práticas de desenvolvimento.
-            </p>
-            <div class="skills">
-              <span class="skill first">Web Mobile</span>
-              <span class="skill second">Web desktop</span>
-              <span class="skill thrid">API Testing</span>
-            </div>
-          </div>
-
-          <div class="ds-plus">
-            <h3>Meus Diferenciais</h3>
-            <ul>
-              <li>
-                <i class="fa-regular fa-circle-check"></i> Testes modulares,
-                reutilizáveis e escaláveis
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i> Cobertura E2E com
-                execução em múltiplas plataformas
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i> Organização por
-                Feature e boas práticas de versionamento
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i> Relatórios visuais e
-                métricas de qualidade
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i>
-                Conhecimento em BDD para testes mais legíveis e colaborativos
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i>
-                Experiência com Jira para gestão de projetos e rastreamento de
-                bugs
-              </li>
-              <li>
-                <i class="fa-regular fa-circle-check"></i>
-                Habilidade em usar Confluence para documentação técnica clara
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="techs">
-      <div class="container-tech">
-        <h2>Habilidade <span class="me">Técnicas</span></h2>
-
-        <div class="tech-skills">
-          <div class="tech-div plataforms">
-            <h3 class="title">🌐 Plataformas</h3>
-            <div class="skills div-nowhow">
-              <span class="skill first nowhow">Web mobile</span>
-              <span class="skill first nowhow">Web desktop</span>
-              <span class="skill first nowhow">API</span>
-            </div>
-          </div>
-
-          <div class="tech-div tools">
-            <h3 class="title">🛠️ Ferramentas</h3>
-            <div class="skills div-nowhow">
-              <span class="skill second nowhow">Cypress</span>
-              <span class="skill second nowhow">Postman</span>
-              <span class="skill second nowhow">Jira</span>
-              <span class="skill second nowhow">Confluence</span>
-              <span class="skill second nowhow">Git</span>
-              <span class="skill second nowhow">Bitbucket</span>
-            </div>
-          </div>
-
-          <div class="tech-div tests">
-            <h3 class="title">🧪 Tipos de Teste</h3>
-            <div class="skills div-nowhow">
-              <span class="skill thrid nowhow">UI Testing</span>
-              <span class="skill thrid nowhow">API Testing</span>
-              <span class="skill thrid nowhow">E2E Testing</span>
-              <span class="skill thrid nowhow">CI/CD Integration</span>
-              <span class="skill thrid nowhow">BDD</span>
-            </div>
-          </div>
-
-          <div class="tech-div how">
-            <h3 class="title">📋 Metodologias</h3>
-            <div class="skills div-nowhow">
-              <span class="skill first nowhow">Agile</span>
-              <span class="skill first nowhow">Scrum</span>
-              <span class="skill first nowhow">Test Automation</span>
-              <span class="skill first nowhow">Continuous Testing</span>
-              <span class="skill first nowhow">Quality Assurance</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects">
-      <div class="container-project">
-        <h2>Meus projetos em <span class="me">Destaque</span></h2>
-
-        <div class="grid-projects">
-          <div class="card-project">
-            <div class="description-project">
-              <h3>📱 Mobile & Desktop E2E</h3>
-              <p>
-                Automação E2E com Cypress e integração Tesults para aplicações
-                web
-              </p>
-            </div>
-            <div class="access-project">
-              <div class="skills div-nowhow">
-                <span class="skill first nowhow">Cypress</span>
-                <span class="skill first nowhow">E2E Testing</span>
-                <span class="skill first nowhow">Tesults Integration</span>
-                <span class="skill first nowhow">Multi-plataform</span>
-              </div>
-              <div class="buttons-project">
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/burger-eats-web/pulls"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-pull-request-icon lucide-git-pull-request"
-                  >
-                    <circle cx="18" cy="18" r="3" />
-                    <circle cx="6" cy="6" r="3" />
-                    <path d="M13 6h3a2 2 0 0 1 2 2v7" />
-                    <line x1="6" x2="6" y1="9" y2="21" />
-                  </svg>
-                  PRs</a
-                >
-
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/burger-eats-web/commits"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal"
-                  >
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="3" x2="9" y1="12" y2="12" />
-                    <line x1="15" x2="21" y1="12" y2="12" />
-                  </svg>
-                  Commits</a
-                >
-
-                <a
-                  class="info-project button-project"
-                  href="https://github.com/reenaataacruuz/burger-eats-web"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-external-link-icon lucide-external-link"
-                  >
-                    <path d="M15 3h6v6" />
-                    <path d="M10 14 21 3" />
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
-                  </svg>
-                  Repo</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project">
-            <div class="description-project">
-              <h3>🔁 CI/CD Pipeline</h3>
-              <p>
-                Pipeline de integração e entrega contínua com testes
-                automatizados
-              </p>
-            </div>
-            <div class="access-project">
-              <div class="skills div-nowhow">
-                <span class="skill first nowhow">CI/CD</span>
-                <span class="skill first nowhow">DevOps</span>
-                <span class="skill first nowhow">Automation</span>
-                <span class="skill first nowhow">Bitbucket</span>
-              </div>
-              <div class="buttons-project">
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/devops-pipeline/pulls"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-pull-request-icon lucide-git-pull-request"
-                  >
-                    <circle cx="18" cy="18" r="3" />
-                    <circle cx="6" cy="6" r="3" />
-                    <path d="M13 6h3a2 2 0 0 1 2 2v7" />
-                    <line x1="6" x2="6" y1="9" y2="21" />
-                  </svg>
-                  PRs</a
-                >
-
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/devops-pipeline/commits"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal"
-                  >
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="3" x2="9" y1="12" y2="12" />
-                    <line x1="15" x2="21" y1="12" y2="12" />
-                  </svg>
-                  Commits</a
-                >
-
-                <a
-                  class="info-project button-project"
-                  href="https://github.com/reenaataacruuz/devops-pipeline"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-external-link-icon lucide-external-link"
-                  >
-                    <path d="M15 3h6v6" />
-                    <path d="M10 14 21 3" />
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
-                  </svg>
-                  Repo</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project">
-            <div class="description-project">
-              <h3>🌐 CV Project</h3>
-              <p>Projeto pessoal de portfólio e currículo online</p>
-            </div>
-            <div class="access-project">
-              <div class="skills div-nowhow">
-                <span class="skill first nowhow">Personal Project</span>
-                <span class="skill first nowhow">Web Development</span>
-                <span class="skill first nowhow">Portfolio</span>
-              </div>
-              <div class="buttons-project">
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/renata-cruz/pulls"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-pull-request-icon lucide-git-pull-request"
-                  >
-                    <circle cx="18" cy="18" r="3" />
-                    <circle cx="6" cy="6" r="3" />
-                    <path d="M13 6h3a2 2 0 0 1 2 2v7" />
-                    <line x1="6" x2="6" y1="9" y2="21" />
-                  </svg>
-                  PRs</a
-                >
-
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/renata-cruz/commits"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal"
-                  >
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="3" x2="9" y1="12" y2="12" />
-                    <line x1="15" x2="21" y1="12" y2="12" />
-                  </svg>
-                  Commits</a
-                >
-
-                <a
-                  class="info-project button-project"
-                  href="https://github.com/reenaataacruuz/renata-cruz"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-external-link-icon lucide-external-link"
-                  >
-                    <path d="M15 3h6v6" />
-                    <path d="M10 14 21 3" />
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
-                  </svg>
-                  Repo</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project">
-            <div class="description-project">
-              <h3>🧪 API Testing Project</h3>
-              <p>Fake Store API - Testes CRUD completos com Cypress</p>
-            </div>
-            <div class="access-project">
-              <div class="skills div-nowhow">
-                <span class="skill first nowhow">Cypress</span>
-                <span class="skill first nowhow">E2E Testing</span>
-                <span class="skill first nowhow">Tesults Integration</span>
-                <span class="skill first nowhow">Multi-plataform</span>
-              </div>
-              <div class="buttons-project">
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/fake-store-api-tests-cypress/pulls"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-pull-request-icon lucide-git-pull-request"
-                  >
-                    <circle cx="18" cy="18" r="3" />
-                    <circle cx="6" cy="6" r="3" />
-                    <path d="M13 6h3a2 2 0 0 1 2 2v7" />
-                    <line x1="6" x2="6" y1="9" y2="21" />
-                  </svg>
-                  PRs</a
-                >
-
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/fake-store-api-tests-cypress/commits"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal"
-                  >
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="3" x2="9" y1="12" y2="12" />
-                    <line x1="15" x2="21" y1="12" y2="12" />
-                  </svg>
-                  Commits</a
-                >
-
-                <a
-                  class="info-project"
-                  href="https://github.com/reenaataacruuz/fake-store-api-tests-cypress"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-external-link-icon lucide-external-link"
-                  >
-                    <path d="M15 3h6v6" />
-                    <path d="M10 14 21 3" />
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    />
-                  </svg>
-                  Repo</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="button-acess-repos">
-          <a
-            class="info-project button-project"
-            href="https://github.com/reenaataacruuz?tab=repositories"
-            >Ver todos os Projetos no Github
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-external-link-icon lucide-external-link"
-            >
-              <path d="M15 3h6v6" />
-              <path d="M10 14 21 3" />
-              <path
-                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="contact">
-      <div class="container-contact">
-        <div class="description-contact">
-          <h2>Entre em <span class="me">Contato</span></h2>
-          <br />
-          <p>Vamos conversar sobre automação de testes, QA ou ideias!</p>
-        </div>
-      </div>
-
-      <div class="infos-contact">
-        <div class="description-contact-city">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            class="menu-icon"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-map-pin-icon lucide-map-pin"
           >
-            <path
-              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-            />
-            <circle cx="12" cy="10" r="3" />
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
-          <span class="city">Osasco, SP - Brasil</span>
-        </div>
-        <div class="card-contact">
-          <div class="icon-contact">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail-icon lucide-mail"
-            >
-              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-            </svg>
-          </div>
-          <div class="info-contact">
-            <p>Email</p>
-            <p>renataceliacruz@gmail.com</p>
-          </div>
-        </div>
+          <svg
+            class="close-icon hidden"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </header>
 
-        <div class="card-contact">
-          <div class="icon-contact">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-linkedin-icon lucide-linkedin"
-            >
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-              />
-              <rect width="4" height="12" x="2" y="9" />
-              <circle cx="4" cy="4" r="2" />
-            </svg>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-image">
+            <img
+              src="./assets/profile.jpg"
+              alt="Renata Cruz - Quality Assurance Engineer"
+            />
           </div>
-          <div class="info-contact">
-            <p>Linkedin</p>
-            <p>/renataceliacruz</p>
-          </div>
-        </div>
 
-        <div class="card-contact">
-          <div class="icon-contact">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-github-icon lucide-github"
-            >
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-              />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
-          </div>
-          <div class="info-contact" href="">
-            <p>GitHub</p>
-            <p>@reenaataacruuz</p>
-          </div>
-        </div>
+          <div class="hero-content">
+            <h1 class="hero-title">Renata Cruz</h1>
+            <p class="hero-subtitle">
+              Quality Assurance Mid. — Manual & Automation
+            </p>
+            <p class="hero-description">
+              Atuo garantindo qualidade de software através de testes manuais
+              bem estruturados e automação eficiente, com foco em confiabilidade
+              e experiência do usuário.
+            </p>
 
-        <div class="card-contact">
-          <div class="icon-contact">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-send-icon lucide-send"
-            >
-              <path
-                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
-              />
-              <path d="m21.854 2.147-10.94 10.939" />
-            </svg>
-          </div>
-          <div class="info-contact">
-            <p>Telegram</p>
-            <p>@reenaataacruuz</p>
+            <div class="hero-links">
+              <a
+                href="https://github.com/reenaataacruuz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-underline"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="./docs/profile.pdf"
+                target="_blank"
+                class="link-underline"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Currículo</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <p class="section-title">Sobre</p>
+          <div class="about-content">
+            <p class="about-text-main">
+              Sou QA Analyst com ampla experiência em testes manuais e
+              automatizados para aplicações web mobile e web desktop.
+            </p>
+            <p class="about-text">
+              Minha atuação combina testes manuais detalhados com automação
+              robusta, utilizando frameworks modernos como Cypress e Playwright.
+              Tenho vivência em projetos de e-commerce e integrações de APIs,
+              sempre buscando otimizar processos e entregar valor real para o
+              negócio.
+            </p>
+            <p class="about-text">
+              Acredito que qualidade vai além de encontrar bugs — é sobre criar
+              experiências que funcionam perfeitamente para o usuário final.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <p class="section-title">Skills</p>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="skill-heading">
+                <span class="skill-dot"></span>
+                Testes Manuais
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Testes de aceite</span>
+                <span class="skill-tag">Testes caixa preta</span>
+                <span class="skill-tag">Testes exploratórios</span>
+                <span class="skill-tag">Testes funcionais</span>
+                <span class="skill-tag">Testes de regressão</span>
+                <span class="skill-tag">Reporte de bugs</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-heading">
+                <span class="skill-dot"></span>
+                Automação & Ferramentas
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Cypress</span>
+                <span class="skill-tag">Playwright</span>
+                <span class="skill-tag">K6</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Jenkins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-title">Projetos</p>
+          <div class="projects-list">
+            <article class="project">
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Mobile & Desktop E2E</h3>
+                  <span class="project-type">Automação</span>
+                </div>
+                <p class="project-description">
+                  Este projeto consiste na automação de testes de ponta a ponta
+                  (E2E) da aplicação <strong>Burger Eats</strong>, uma
+                  plataforma de cadastro para entregadores de comida. O objetivo
+                  é garantir a integridade dos fluxos de cadastro e a validação
+                  de regras de negócio.
+                </p>
+                <div class="project-tech">
+                  <span>Cypress</span>
+                  <span class="tech-dot">·</span>
+                  <span>JavaScript</span>
+                  <span class="tech-dot">·</span>
+                  <span>CI/CD</span>
+                  <span class="tech-dot">·</span>
+                  <span>Tesults</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/reenaataacruuz/burger-eats-web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link link-underline"
+              >
+                <span>Ver no GitHub</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </article>
+
+            <article class="project">
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">API Testing Project</h3>
+                  <span class="project-type">API</span>
+                </div>
+                <p class="project-description">
+                  Este projeto apresenta uma suíte de testes automatizados para
+                  a <strong>Fake Store API</strong>, cobrindo os principais
+                  fluxos de gerenciamento de produtos, usuários e autenticação.
+                  O foco principal é validar a integridade dos dados e a
+                  estabilidade dos endpoints (Back-end).
+                </p>
+                <div class="project-tech">
+                  <span>Cypress</span>
+                  <span class="tech-dot">·</span>
+                  <span>API</span>
+                  <span class="tech-dot">·</span>
+                  <span>Node.js</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/reenaataacruuz/fake-store-api-tests-cypress"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link link-underline"
+              >
+                <span>Ver no GitHub</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </article>
+
+            <article class="project">
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">CI/CD Pipeline</h3>
+                  <span class="project-type">Manual</span>
+                </div>
+                <p class="project-description">
+                  Este repositório contém a configuração de uma pipeline de
+                  <strong>Integração e Entrega Contínua (CI/CD)</strong>, focada
+                  em garantir que nenhum código seja integrado ao projeto sem
+                  antes passar por uma rigorosa camada de testes automatizados.
+                </p>
+                <div class="project-tech">
+                  <span>CI/CD</span>
+                  <span class="tech-dot">·</span>
+                  <span>GitHub Actions</span>
+                  <span class="tech-dot">·</span>
+                  <span>Pipeline</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/reenaataacruuz/devops-pipeline"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link link-underline"
+              >
+                <span>Ver no GitHub</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <p class="section-title">Contato</p>
+          <div class="contact-links">
+            <a
+              href="https://github.com/reenaataacruuz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <span class="link-underline">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/renataceliacruz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span class="link-underline">Telegram</span>
+            </a>
+            <a
+              href="https://t.me/reenaataacruuz"
+              class="contact-link"
+              target="_blank"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span class="link-underline">telegram</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
