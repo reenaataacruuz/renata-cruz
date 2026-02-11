@@ -1,6 +1,3 @@
-/* ================================
-   CSS Variables & Reset
-================================ */
 :root {
   --white: #ffffff;
   --text-primary: #111827;
@@ -9,6 +6,22 @@
   --purple-hover: #6d28d9;
   --bg-alt: #f9fafb;
   --border-color: #e5e7eb;
+  --border: #e5e7eb;
+  --fg: #111827;
+  --bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --white: #111111;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --purple-accent: #a78bfa;
+  --purple-hover: #c4b5fd;
+  --bg-alt: #151515;
+  --border-color: #374151;
+  --border: #374151;
+  --fg: #f9fafb;
+  --bg: #111111;
 }
 
 *,
@@ -38,9 +51,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ================================
-   Utilities
-================================ */
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -57,9 +67,6 @@ body {
   display: none !important;
 }
 
-/* ================================
-   Link Underline Effect
-================================ */
 .link-underline {
   position: relative;
   display: inline-block;
@@ -82,9 +89,6 @@ body {
   width: 100%;
 }
 
-/* ================================
-   Header
-================================ */
 .header {
   position: fixed;
   top: 0;
@@ -94,6 +98,11 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+[data-theme="dark"] .header {
+  background-color: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -133,6 +142,38 @@ body {
   color: var(--purple-hover);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--purple-accent);
+  background-color: var(--bg-alt);
+}
+
+.theme-icon {
+  flex-shrink: 0;
+}
+
 .menu-toggle {
   display: flex;
   padding: 0.5rem;
@@ -148,7 +189,6 @@ body {
   }
 }
 
-/* Mobile Menu */
 .nav-list.active {
   display: flex;
   flex-direction: column;
@@ -171,9 +211,6 @@ body {
   background-color: var(--bg-alt);
 }
 
-/* ================================
-   Hero Section
-================================ */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -291,16 +328,13 @@ body {
   color: var(--purple-accent);
 }
 
-/* ================================
-   Sections
-================================ */
 .section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 8rem 0;
+    padding: 5rem 0;
   }
 }
 
@@ -317,9 +351,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* ================================
-   About Section
-================================ */
 .about-content {
   max-width: 42rem;
 }
@@ -354,9 +385,6 @@ body {
   margin-bottom: 0;
 }
 
-/* ================================
-   Skills Section
-================================ */
 .skills-grid {
   display: grid;
   gap: 3rem;
@@ -404,9 +432,6 @@ body {
   background-color: var(--white);
 }
 
-/* ================================
-   Projects Section
-================================ */
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -492,9 +517,6 @@ body {
   color: var(--purple-accent);
 }
 
-/* ================================
-   Contact Section
-================================ */
 .contact-links {
   display: flex;
   align-items: center;
@@ -515,9 +537,6 @@ body {
   color: var(--purple-accent);
 }
 
-/* ================================
-   Footer
-================================ */
 .footer {
   padding: 2rem 0;
   border-top: 1px solid var(--border-color);
@@ -541,9 +560,92 @@ body {
   }
 }
 
-/* ================================
-   Animations
-================================ */
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-dot {
+  position: absolute;
+  left: -2.25rem;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--fg);
+  border: 2px solid var(--bg);
+}
+.timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.timeline-header .company {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.timeline-header .client {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.timeline-header .timeline-period {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+}
+.timeline-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.timeline-role {
+  font-weight: 600;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  padding-left: 1.5rem;
+  text-align: justify;
+}
+
+.content-desc {
+  margin: 1rem;
+}
+
+.timeline-role-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.timeline-role-header svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    position: relative;
+    padding-left: 0.5rem;
+  }
+
+  .timeline-desc {
+    color: var(--text-secondary);
+    padding-left: 0;
+    text-align: justify;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

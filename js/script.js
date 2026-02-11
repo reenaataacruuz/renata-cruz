@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIconMoon = themeToggle && themeToggle.querySelector('.theme-icon-moon');
+    const themeIconSun = themeToggle && themeToggle.querySelector('.theme-icon-sun');
+
+    function updateThemeIcons() {
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (themeIconMoon) themeIconMoon.classList.toggle('hidden', isDark);
+        if (themeIconSun) themeIconSun.classList.toggle('hidden', !isDark);
+        if (themeToggle) themeToggle.setAttribute('aria-label', isDark ? 'Alternar tema claro' : 'Alternar tema escuro');
+    }
+
+    if (themeToggle) {
+        updateThemeIcons();
+        themeToggle.addEventListener('click', function () {
+            var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            updateThemeIcons();
+        });
+    }
+
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.getElementById('navList');
     const menuIcon = menuToggle.querySelector('.menu-icon');
